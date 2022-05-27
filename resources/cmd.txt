@@ -1,0 +1,9 @@
+php artisan migrate:fresh --path=/database/migrations/account/
+
+php artisan migrate --path=/database/migrations/student
+
+php artisan make:model Student -mcr
+
+composer require laravel/ui
+
+php artisan ui:auth
